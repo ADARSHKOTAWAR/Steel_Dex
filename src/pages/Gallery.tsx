@@ -2,35 +2,35 @@ import React from 'react';
 
 const projects = [
   {
-    title: 'Image 1',
+    title: 'Muti Building',
     image: '/assets/MBS JOB. 01.JPG',
   },
   {
-    title: 'Image 2',
+    title: 'Len-to Building',
     image: '/assets/MBS JOB. 02.PNG',
   },
   {
-    title: 'Image 3',
+    title: 'Hip Building',
     image: '/assets/MBS JOB. 03.PNG',
   },
   {
-    title: 'Image 4',
+    title: 'Overhead Door Building',
     image: '/assets/MBS JOB. 04.png',
   },
   {
-    title: 'Image 5',
+    title: 'Single Slope Building',
     image: '/assets/MBS JOB. 05.JPG',
   },
   {
-    title: 'Image 6',
+    title: 'Crane and Mezzanine Building',
     image: '/assets/MBS JOB. 06.JPG',
   },
   {
-    title: 'Image 7',
+    title: 'Clear Stories Building',
     image: '/assets/MBS JOB. 07.JPG',
   },
   {
-    title: 'Image 8',
+    title: 'Warehouse / Mini Storage Buildings',
     image: '/assets/selfe Store.JPG',
   },
 ];
@@ -52,17 +52,21 @@ const Gallery = () => {
           {projects.map((project, index) => (
             <div
               key={index}
-              className="group relative overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300"
+              className="relative overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 group"
               style={{ aspectRatio: '3/2' }}
             >
+              {/* Image with hover scale effect */}
               <img
                 src={project.image}
                 alt={project.title}
-                className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
+                className="w-full h-full object-cover transform transition-transform duration-500 group-hover:scale-105 group-hover:brightness-75"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-              <div className="absolute bottom-0 left-0 right-0 p-6 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
-                <h3 className="text-white font-semibold text-lg">{project.title}</h3>
+              
+              {/* Overlay + Title */}
+              <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 text-white text-center p-4 transition-all duration-500 group-hover:bg-opacity-70">
+                <h3 className="font-bold text-xl md:text-2xl tracking-wide text-white transition-all duration-500 group-hover:text-gray-300">
+                  {project.title}
+                </h3>
               </div>
             </div>
           ))}
