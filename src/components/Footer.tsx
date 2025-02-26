@@ -66,12 +66,12 @@ const Footer = () => {
               </div>
               <div className="flex items-center">
                 <Phone className="h-5 w-5 text-secondary mr-2" />
-                <span className="text-gray-300">+1 (555) 123-4567</span>
+                <span className="text-gray-300">+91 122 39533</span>
               </div>
               <div className="flex items-center">
                 <MapPin className="h-5 w-5 text-secondary mr-2" />
                 <span className="text-gray-300">
-                  123 Steel Street, Industrial District
+                SteelDex, 55, Sri Sai Nagar, Madhapur, Hyderabad
                 </span>
               </div>
             </div>

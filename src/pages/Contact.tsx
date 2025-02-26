@@ -58,7 +58,7 @@ const Contact = () => {
                   <Phone className="h-6 w-6 text-secondary flex-shrink-0 mt-1" />
                   <div className="ml-4">
                     <h3 className="font-semibold text-gray-900">Phone</h3>
-                    <p className="text-gray-600">+1 (555) 123-4567</p>
+                    <p className="text-gray-600">+91 122 39533</p>
                   </div>
                 </div>
 
@@ -67,11 +67,11 @@ const Contact = () => {
                   <div className="ml-4">
                     <h3 className="font-semibold text-gray-900">Address</h3>
                     <p className="text-gray-600">
-                      123 Steel Street
+                    SteelDex, 55,
                       <br />
-                      Industrial District
+                      Sri Sai Nagar, Madhapur, 
                       <br />
-                      City, State 12345
+                      Hyderabad, Telangana.
                     </p>
                   </div>
                 </div>
