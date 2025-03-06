@@ -65,6 +65,10 @@ const Footer = () => {
                 <span className="text-gray-300">info@steeldex.com</span>
               </div>
               <div className="flex items-center">
+                <Mail className="h-5 w-5 text-secondary mr-2" />
+                <span className="text-gray-300">sale@steeldex.com</span>
+              </div>
+              <div className="flex items-center">
                 <Phone className="h-5 w-5 text-secondary mr-2" />
                 <span className="text-gray-300">+91 122 39533</span>
               </div>

@@ -10,11 +10,29 @@ const Contact = () => {
     message: '',
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission logic here
-    console.log('Form submitted:', formData);
+  
+    try {
+      const response = await fetch("http://localhost:5000/send-email", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
+  
+      const data = await response.json();
+      if (response.ok) {
+        alert("Email sent successfully!");
+        setFormData({ name: "", email: "", phone: "", subject: "", message: "" });
+      } else {
+        alert("Error sending email: " + data.message);
+      }
+    } catch (error) {
+      console.error("Error:", error);
+      alert("Failed to send email.");
+    }
   };
+  
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -51,6 +69,7 @@ const Contact = () => {
                   <div className="ml-4">
                     <h3 className="font-semibold text-gray-900">Email</h3>
                     <p className="text-gray-600">info@steeldex.com</p>
+                    <p className="text-gray-600">sale@steeldex.com</p>
                   </div>
                 </div>
 

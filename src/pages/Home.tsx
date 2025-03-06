@@ -17,7 +17,7 @@ const Home = () => {
         <div className="relative max-w-7xl mx-auto px-4 h-full flex items-center">
           <div className="text-white">
             <h1 className="text-5xl font-bold mb-6">
-              Precision-Driven PEB Steel Detailing Services
+              Precision-Driven PEMB (Pre-engineering Metal Building) Steel Detailing Services
             </h1>
             <p className="text-xl mb-8 max-w-2xl">
               Delivering high-quality steel detailing solutions for manufacturing,
