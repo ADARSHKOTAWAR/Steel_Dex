@@ -24,7 +24,7 @@ const Navbar = () => {
         <div className="flex justify-between h-16">
           <div className="flex items-center">
             <Link to="/" className="flex items-center">
-              <img src="assets/logo.jpg" width={60} height={60} alt="logo" />
+              <img src="assets/logo.jpg" width={60} height={60} alt="logo" className='transition-transform duration-200 hover:scale-105'/>
               <span className="ml-2 text-white font-bold text-xl">Steel Dex</span>
             </Link>
           </div>

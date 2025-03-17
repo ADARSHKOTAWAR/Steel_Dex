@@ -10,8 +10,10 @@ const Footer = () => {
           {/* Company Info */}
           <div className="space-y-4">
             <div className="flex items-center">
-            <img src="assets/logo.jpg" width={60} height={60} alt="logo" />
-              <span className="ml-2 font-bold text-xl">Steel Dex</span>
+              <Link to="/" className="flex items-center">
+                <img src="assets/logo.jpg" width={60} height={60} alt="logo" className='transition-transform duration-200 hover:scale-105'/>
+                <span className="ml-2 font-bold text-xl">Steel Dex</span>
+              </Link>
             </div>
             <p className="text-gray-300">
               Delivering high-quality, precision-driven PEB steel detailing services.
@@ -62,11 +64,11 @@ const Footer = () => {
             <div className="space-y-4">
               <div className="flex items-center">
                 <Mail className="h-5 w-5 text-secondary mr-2" />
-                <span className="text-gray-300">info@steeldex.com</span>
+                <span className="text-gray-300">info@steeldex.co.in</span>
               </div>
               <div className="flex items-center">
                 <Mail className="h-5 w-5 text-secondary mr-2" />
-                <span className="text-gray-300">sale@steeldex.com</span>
+                <span className="text-gray-300">sales@steeldex.co.in</span>
               </div>
               <div className="flex items-center">
                 <Phone className="h-5 w-5 text-secondary mr-2" />

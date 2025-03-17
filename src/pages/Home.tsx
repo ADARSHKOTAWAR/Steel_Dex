@@ -24,7 +24,7 @@ const Home = () => {
               commercial, and infrastructure projects.
             </p>
             <Link
-              to="/contact"
+              to="/services"
               className="inline-flex items-center bg-secondary hover:bg-secondary-hover px-6 py-3 rounded-md text-white font-semibold transition-colors duration-200"
             >
               Get Started
