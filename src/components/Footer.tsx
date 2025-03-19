@@ -11,7 +11,7 @@ const Footer = () => {
           <div className="space-y-4">
             <div className="flex items-center">
               <Link to="/" className="flex items-center">
-                <img src="assets/logo.jpg" width={60} height={60} alt="logo" className='transition-transform duration-200 hover:scale-105'/>
+                <img src="assets/logo.jpg" width={60} height={60} alt="logo" className='transition-transform duration-200 hover:scale-125'/>
                 <span className="ml-2 font-bold text-xl">Steel Dex</span>
               </Link>
             </div>

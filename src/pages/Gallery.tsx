@@ -2,7 +2,7 @@ import React from 'react';
 
 const projects = [
   {
-    title: 'Building',
+    title: 'Multi Building',
     image: '/assets/MBS JOB. 01.JPG',
   },
   {
