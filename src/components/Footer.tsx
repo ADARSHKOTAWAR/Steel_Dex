@@ -62,10 +62,10 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4">Contact Us</h3>
             <div className="space-y-4">
-              <div className="flex items-center">
+              {/* <div className="flex items-center">
                 <Mail className="h-5 w-5 text-secondary mr-2" />
-                {/* <span className="text-gray-300">info@steeldex.co.in</span> */}
-              </div>
+                <span className="text-gray-300">info@steeldex.co.in</span>
+              </div> */}
               <div className="flex items-center">
                 <Mail className="h-5 w-5 text-secondary mr-2" />
                 <span className="text-gray-300">sales@steeldex.co.in</span>
