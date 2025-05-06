@@ -7,10 +7,10 @@ const Home = () => {
     <div>
       {/* Hero Section */}
       <section
-        className="relative bg-cover bg-center h-[600px]"
+        className="relative bg-cover bg-center h-[700px]"
         style={{
           backgroundImage:
-            "url('/assets/baground-home.jpg')",
+            "url('/assets/background-home.jpeg')",
         }}
       >
         <div className="absolute inset-0 bg-black bg-opacity-60" />
