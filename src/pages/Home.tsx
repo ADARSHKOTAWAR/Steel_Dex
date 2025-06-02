@@ -7,7 +7,9 @@ const Home = () => {
   const images = [
     "/assets/bg1.jpeg",
     "/assets/bg2.png",
-    "/assets/bg4.jpg"
+    "/assets/bg3.webp",
+    "/assets/bg4.jpg",
+    "/assets/bg5.jpeg"
   ];
 
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
