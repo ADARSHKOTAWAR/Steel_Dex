@@ -44,15 +44,24 @@ const Navbar = () => {
               <div
                 className="flex items-center cursor-pointer"
                 onClick={() => setIsLogoModalOpen(true)}
-              >
-                <img
-                  src="assets/logo.jpg"
-                  width={60}
-                  height={60}
-                  alt="logo"
-                  className="transition-transform duration-200 hover:scale-125"
-                />
-                <span className="ml-2 text-white font-bold text-xl">Steel Dex</span>
+                >
+              <img
+              src="assets/logo.jpg"
+              width={60}
+              height={60}
+              alt="logo"
+              className="transition-transform duration-200 hover:scale-125"
+              />
+
+            {/* Text Block beside the logo */}
+              <div className="ml-4 flex flex-col justify-center items-center">
+                  <div className="text-white font-bold text-xl leading-tight">
+                    Steel Dex Engineering Solutions
+                  </div>
+                  <div className="text-white text-xs mt-1 leading-tight">
+                    Your detailing partner from start to end
+                  </div>
+                </div>
               </div>
             </div>
 

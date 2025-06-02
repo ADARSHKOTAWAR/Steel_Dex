@@ -58,7 +58,7 @@ const Footer = () => {
               <li className="text-gray-300">Mini Storage Building</li>
               <li className="text-gray-300">Warehouse Buildings</li>
               <li className="text-gray-300">Aircraft Hangar</li>
-              <li className="text-gray-300">Structural Services</li>
+              <li className="text-gray-300">Hybrid Structure Detailing</li>
             </ul>
           </div>
 
@@ -69,6 +69,10 @@ const Footer = () => {
               <div className="flex items-center">
                 <Mail className="h-5 w-5 text-secondary mr-2" />
                 <span className="text-gray-300">sales@steeldex.co.in</span>
+              </div>
+              <div className="flex items-center">
+                <Mail className="h-5 w-5 text-secondary mr-2" />
+                <span className="text-gray-300">info@steeldex.co.in</span>
               </div>
               <div className="flex items-center">
                 <Phone className="h-5 w-5 text-secondary mr-2" />

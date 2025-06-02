@@ -1,16 +1,32 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { ArrowRight, Building2, Shield, Users } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const Home = () => {
+
+  const images = [
+    "/assets/bg1.jpeg",
+    "/assets/bg2.png",
+    "/assets/bg4.jpg"
+  ];
+
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImageIndex((prev) => (prev + 1) % images.length);
+    }, 5000); // Change every 5 seconds
+
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <div>
       {/* Hero Section */}
       <section
-        className="relative bg-cover bg-center h-[700px]"
+        className="relative bg-cover bg-center h-[700px] transition-all duration-1000"
         style={{
-          backgroundImage:
-            "url('/assets/background-home.jpeg')",
+          backgroundImage: `url('${images[currentImageIndex]}')`,
         }}
       >
         <div className="absolute inset-0 bg-black bg-opacity-60" />
